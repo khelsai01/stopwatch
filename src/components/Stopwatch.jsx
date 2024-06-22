@@ -83,9 +83,27 @@ const Stopwatch = () => {
             time.min < 10 ? `0${time.min}` : `${time.min}`
           } : ${time.sec < 10 ? `0${time.sec}` : `${time.sec}`}`}</h1>
           <div style={{ display: "flex", flexDirection: "row", gap: 4 }}>
-            <button onClick={stratTime}>Start</button>
-            <button onClick={stopTime}>Stop</button>
-            <button onClick={resetTime}>Reset</button>
+            <button onClick={stratTime} style={{
+            backgroundColor: "green",
+            color: "white",
+            padding: "10px",
+            border: "none",
+            borderRadius: "7px",cursor:'pointer'
+          }}>Start</button>
+            <button onClick={stopTime} style={{
+            backgroundColor: "red",
+            color: "white",
+            padding: "10px",
+            border: "none",
+            borderRadius: "7px",cursor:'pointer'
+          }}>Stop</button>
+            <button onClick={resetTime} style={{
+            backgroundColor: "gray",
+            color: "white",
+            padding: "10px",
+            border: "none",
+            borderRadius: "7px",cursor:'pointer'
+          }}>Reset</button>
           </div>
         </div>
       </div>
